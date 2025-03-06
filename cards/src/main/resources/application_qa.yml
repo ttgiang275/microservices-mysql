@@ -1,0 +1,28 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+  application:
+    name: cards
+  datasource:
+    url: jdbc:mysql://localhost:3308/cardsdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+  sql:
+    init:
+      mode: always
+
+build:
+  version: "4.0"
+
+cards:
+  message: "Cards Service - QA"
+  contactDetails:
+    name: "Riverbank"
+    email: "riverbank@example.com"
+  onCallSupport:
+    - (123) 456-7890
+    - (987) 654-3210
